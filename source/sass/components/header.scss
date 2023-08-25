@@ -152,6 +152,10 @@
   }
 }
 
+.header__nav-link--active:hover {
+  opacity: 1;
+}
+
 .header__nav-link--active::before {
   position: absolute;
   width: 100%;
@@ -168,6 +172,7 @@
     background-color: $active-link-desktop-color;
   }
 }
+
 
 .header__food {
   border: 2px solid black;
