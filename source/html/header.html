@@ -1,30 +1,39 @@
 <header class="header">
-  <nav class="header__menu">
-    <a href="#" class="header__logo-link">
-      <img src="@img/header-logo.png" width="202" height="59" alt="Header logotype" class="header__logo-img">
-    </a>
-    <ul class="header__menu-list">
-      <li class="header__menu-item">
-        <a href="#" class="header__menu-link header__menu-ink--active">Главная</a>
+  <nav class="header__nav">
+    <div class="header__nav-logo">
+      <div class="header__nav-logo-mobile">
+        <a href="index.html">
+          <img src="@img/svg/logo-mobile.svg" width="33.32" height="37.61" alt="header mobile logo">
+        </a>
+        <a href="index.html">
+          <img src="@img/svg/logo-text.svg" width="101" height="18" alt="header mobile logo">
+        </a>
+        <button type="button" class="toggle-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="header__nav-logo-tablet">
+        <a href="index.html"></a>
+      </div>
+    </div>
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a class="header__nav-link header__nav-link--active">Главная</a>
       </li>
-      <li class="header__menu-item">
-        <a href="#" class="header__menu-link">Каталог продукции</a>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">Каталог продукции</a>
       </li>
-      <li class="header__menu-tem">
-        <a href="#" class="header__menu-link">Подбор программы</a>
+      <li class="header__nav-item">
+        <a href="#" class="header__nav-link">Подбор программы</a>
       </li>
     </ul>
   </nav>
 
-  <section class="header__functional-food">
-    <div class="header__functional-text">
-      <h2 class="visually__hidden">Питание для котов.</h2>
-      <p class="header__functional-title"> Функциональное питание для котов </p>
-      <p class="header__functional-subtext">Занялся собой? Займись котом!</p>
-      <a href="#" class="header__functional-button">Подобрать программу</a>
-    </div>
-    <div class="header__functional-cat">
-      <img src="@img/cat_energy_banner.png" alt="Bottle 'Cat Energy'" width="552" height="499">
-    </div>
+  <section class="header__food">
+
   </section>
 </header>

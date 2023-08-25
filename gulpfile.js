@@ -46,7 +46,7 @@ export function processStyles () {
   return gulp.src('source/sass/*.scss', { sourcemaps: isDevelopment })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
-    .pipe(replace(/@img\//g, 'img/'))
+    .pipe(replace(/@img\//g, '/img/'))
     .pipe(postcss([
       postUrl({ assetsPath: '../' }),
       autoprefixer(),
@@ -121,8 +121,10 @@ function reloadServer (done) {
 
 function watchFiles () {
   gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
+  gulp.watch('source/sass/*.scss', gulp.series(processStyles));
   gulp.watch('source/js/script.js', gulp.series(processScripts));
   gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
+  gulp.watch('source/**/*.html', gulp.series(processMarkup, reloadServer));
 }
 
 function compileProject (done) {
